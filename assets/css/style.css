@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&display=swap');
+
 *,*::after,*::before{
     padding: 0;
     margin: 0;
@@ -9,4 +11,78 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: rgb(9, 24, 67);
+}
+.card{
+    background-color: white;
+    padding: 1rem 2rem 1rem 2rem;
+    border-radius: 20px;
+    max-width: 500px;
+}
+.tags{
+    position: relative;
+    z-index: 1;
+    padding: 0 20px;
+    background-color: #fff;
+    font-size: 20px;
+}
+.tags-container{
+    margin: 20px 60px 20px 60px;
+    text-align: center;
+    position: relative;
+}
+.tags-container::before,
+.tags-container::after{
+    content: "";
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    height: 2px;
+    background-color: #333;
+}
+
+.tags-container::before{
+    right: 0;
+}
+
+.tags-container::after{
+    left: 0;
+}
+
+.card-quote{
+    padding: 1rem;
+    margin-bottom: 1rem;
+    font-size: 25px;
+    line-height: 2rem;
+    text-align: center;
+}
+
+.quote-awesome{
+    font-size: 40px;
+}
+
+.quote-content{
+    font-family: 'EB Garamond', serif;
+    font-weight: 700;
+    font-style: italic;
+}
+
+.card-author{
+    text-align: end;
+    padding-right: 2rem;
+}
+.button-div{
+    text-align: end;
+    margin: 1rem 2rem 1rem 0px;
+}
+.next-quote-btn{
+    border-radius: 50%;
+    background-color: transparent;
+    cursor: pointer;
+    border: none;
+    transition: filter .5s ease,transform .5s ease;
+}
+.next-quote-btn:hover{
+    filter: brightness(1.2);
+    transform: scale(1.1);
 }
