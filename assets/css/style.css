@@ -12,12 +12,14 @@ body{
     align-items: center;
     justify-content: center;
     background-color: rgb(9, 24, 67);
+    background-position: center;
+    background-repeat: no-repeat;
 }
 .card{
     background-color: white;
     padding: 1rem 2rem 1rem 2rem;
     border-radius: 20px;
-    max-width: 500px;
+    max-width: 600px;
 }
 .tags{
     position: relative;
@@ -53,8 +55,7 @@ body{
     padding: 1rem;
     margin-bottom: 1rem;
     font-size: 25px;
-    line-height: 2rem;
-    text-align: center;
+    line-height: 3rem;
 }
 
 .quote-awesome{
@@ -64,7 +65,8 @@ body{
 .quote-content{
     font-family: 'EB Garamond', serif;
     font-weight: 700;
-    font-style: italic;
+    text-align: justify;
+    margin: 0px 20px 0px 20px;
 }
 
 .card-author{
