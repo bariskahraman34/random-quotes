@@ -11,7 +11,10 @@ async function fetchQuotesSubjects(){
 }
 let counter = 0;
 
-body.style.background = `url(https://picsum.photos/${window.innerWidth}/${window.innerHeight}?random=${counter})`;
+body.style.background = `url(https://picsum.photos/id/1/5000/3333.webp)`;
+body.style.backgroundPosition = "center";
+body.style.backgroundRepeat = "no-repeat";
+body.style.backgroundSize = "cover";
 
 nextQuoteBtn.addEventListener('click',async function(){
     const data = await fetchQuotesSubjects();
@@ -19,6 +22,8 @@ nextQuoteBtn.addEventListener('click',async function(){
     quoteContent.innerText = `${data.content}`;
     cardAuthor.innerText = `${data.author}`;
     counter ++;
-    body.style.background = `url(https://picsum.photos/${window.innerWidth}/${window.innerHeight}?random=${counter})`;
+    body.style.background = `url(https://picsum.photos/${window.innerWidth}/${window.innerHeight}?random=${counter}.webp)`;
+    body.style.backgroundPosition = "center";
+    body.style.backgroundRepeat = "no-repeat";
 
 })
